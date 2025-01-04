@@ -10,4 +10,4 @@ const imageSchema = new Schema({
 
 const ImageModel = model('Image', imageSchema);
 
-module.exports = Image;
+module.exports = ImageModel;

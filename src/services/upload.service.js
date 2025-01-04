@@ -1,4 +1,5 @@
-import ImageModel from '../models/Image.model'
+const ImageModel = require("../models/Image.model");
+
 
 const uploadImage = async (file) => {
     let filename = file.filename;
