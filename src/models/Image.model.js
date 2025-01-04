@@ -8,6 +8,6 @@ const imageSchema = new Schema({
     }
 }, { timestamps: true });
 
-const Image = model('Image', imageSchema);
+const ImageModel = model('Image', imageSchema);
 
 module.exports = Image;
