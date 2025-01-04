@@ -3,7 +3,6 @@ const { NotFoundError } = require("../utils/error.util");
 
 const uploadImage = async (req, res, next) => {
     try {
-        console.log(req.file);
         
         if (!req.file) throw new NotFoundError('File is required');
 
