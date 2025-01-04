@@ -1,12 +1,12 @@
 const express = require('express');
-const config = require('./config');
+const config = require('./src/config');
 const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
-const swaggerSpec = require('./config/swagger');
-require('./config/database');
-const router = require('./routes');
+const swaggerSpec = require('./src/config/swagger');
+require('./src/config/database');
+const router = require('./src/routes');
 const path = require('path');
-const errorMiddleware = require('./middlewares/error.middleware');
+const errorMiddleware = require('./src/middlewares/error.middleware');
 
 const app = express();
 app.use(express.json());
