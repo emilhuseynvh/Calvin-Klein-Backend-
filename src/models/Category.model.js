@@ -21,8 +21,7 @@ const categorySchema = new Schema({
     required: false,
   },
   images: {
-    type: [Schema.Types.ObjectId],
-    ref: 'Image',
+    type: [String]
   }
 }, { timestamps: true });
 

@@ -39,9 +39,7 @@ const productVariantSchema = new Schema({
         default: 0,
     },
     images: {
-        type: [Schema.Types.ObjectId],
-        ref: "Image",
-        default: [],
+        type: [String],
     },
     price: {
         type: Number,
