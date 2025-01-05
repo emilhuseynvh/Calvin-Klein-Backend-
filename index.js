@@ -12,7 +12,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Swagger documentation route
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use('/api', router);

@@ -5,7 +5,7 @@ const uploadImage = async (file) => {
     let filename = file.filename;
 
     let image = new ImageModel({
-        url: `/upload/${filename}`
+        url: `https://backend.apasni.me/upload/${filename}`
     });
 
     await image.save();
