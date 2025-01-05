@@ -16,7 +16,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use('/api', router);
 
-const uploadPath = path.join(__dirname, "../upload");
+const uploadPath = path.join(__dirname, "upload");
 app.use("/upload", express.static(uploadPath));
 
 app.use(errorMiddleware);
